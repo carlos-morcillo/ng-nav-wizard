@@ -1,8 +1,8 @@
-# Ngx Date Range picker
+# Ng Nav Wizard
 
 ![ng-nav-wizard](https://res.cloudinary.com/alsoicode/image/upload/v1542168886/ng-nav-wizard/ng-nav-wizard.png)
 
-Current version: 1.0.44
+Current version: 1.0.2
 
 [comment]: <> (Here's a minimal example of ng-nav-wizard in action, showing positioning on the left, right and using custom templating: https://ng-nav-wizard.netlify.app/)
 

@@ -26,6 +26,7 @@ export class NgStepComponent implements AfterContentInit {
 
 	@Input() index: number;
 	@Input() title: string;
+	@Input() disabled: boolean = false;
 
 	@ViewChild('innerTemplate') innerTemplate: TemplateRef<any>;
 	@ContentChild(NgStepTriggerDirective, { read: TemplateRef }) stepTriggerTpt: NgStepTriggerDirective;

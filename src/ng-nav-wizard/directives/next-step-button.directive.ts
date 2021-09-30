@@ -11,6 +11,6 @@ export class NextStepButtonDirective {
 	) { }
 
 	@HostListener('click') onClick() {
-		this._parent.container.goTo(this._parent.index + 1);
+		this._parent.container.goTonext()
 	}
 }
