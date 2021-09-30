@@ -1,0 +1,46 @@
+.stepper.stepper-links .stepper-nav {
+	display: flex;
+	margin: 0 auto;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.stepper.stepper-links .stepper-nav .stepper-item {
+	position: relative;
+	flex-shrink: 0;
+	margin: 1rem 1.5rem;
+}
+
+.stepper.stepper-links .stepper-nav .stepper-item:after {
+	content: " ";
+	position: absolute;
+	top: 2.3rem;
+	left: 0;
+	height: 2px;
+	width: 100%;
+	background-color: transparent;
+	transition: color 0.2s ease, background-color 0.2s ease;
+}
+
+.stepper.stepper-links .stepper-nav .stepper-item .stepper-title {
+	color: #181c32;
+	font-weight: 600;
+	font-size: 1.25rem;
+}
+
+.stepper.stepper-links .stepper-nav .stepper-item.current {
+	transition: color 0.2s ease, background-color 0.2s ease;
+}
+
+.stepper.stepper-links .stepper-nav .stepper-item.current .stepper-title {
+	color: #009ef7;
+}
+
+.stepper.stepper-links .stepper-nav .stepper-item.current:after {
+	background-color: #009ef7;
+}
+
+.stepper.stepper-links .stepper-nav .stepper-item.completed .stepper-title {
+	color: #b5b5c3;
+}

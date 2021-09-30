@@ -1,27 +1,42 @@
-# NgStepper
+# Ngx Date Range picker
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.0.4.
+![ng-nav-wizard](https://res.cloudinary.com/alsoicode/image/upload/v1542168886/ng-nav-wizard/ng-nav-wizard.png)
 
-## Development server
+Current version: 1.0.44
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+[comment]: <> (Here's a minimal example of ng-nav-wizard in action, showing positioning on the left, right and using custom templating: https://ng-nav-wizard.netlify.app/)
 
-## Code scaffolding
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## External Dependencies
 
-## Build
+- [Bootstrap](https://momentjs.com)
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Required Angular Modules
 
-## Running unit tests
+## Polyfills
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+If you are targeting older browsers, you may need to polyfill es7 arrays, specifically [.some()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/some)
 
-## Running end-to-end tests
+## Usage
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+Install from npm:
 
-## Further help
+ - `npm install ng-nav-wizard --save`
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Import and add the `NgNavWizardModule` to your main module, or wherever applicable. Example:
+
+```TypeScript
+import { NgNavWizardModule } from 'ng-nav-wizard';
+
+@NgModule({
+  declarations: [
+    ...
+  ],
+  imports: [
+    ...
+    ReactiveFormsModule,
+  ],
+  providers: [],
+  bootstrap: [AppComponent]
+})
+export class AppModule { }
