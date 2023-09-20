@@ -1,42 +1,24 @@
-# Ng Nav Wizard
+# Stepper
 
-![ng-nav-wizard](https://res.cloudinary.com/alsoicode/image/upload/v1542168886/ng-nav-wizard/ng-nav-wizard.png)
+This library was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.0.
 
-Current version: 1.0.2
+## Code scaffolding
 
-[comment]: <> (Here's a minimal example of ng-nav-wizard in action, showing positioning on the left, right and using custom templating: https://ng-nav-wizard.netlify.app/)
+Run `ng generate component component-name --project stepper` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module --project stepper`.
+> Note: Don't forget to add `--project stepper` or else it will be added to the default project in your `angular.json` file. 
 
+## Build
 
-## External Dependencies
+Run `ng build stepper` to build the project. The build artifacts will be stored in the `dist/` directory.
 
-- [Bootstrap](https://momentjs.com)
+## Publishing
 
-## Required Angular Modules
+After building your library with `ng build stepper`, go to the dist folder `cd dist/stepper` and run `npm publish`.
 
-## Polyfills
+## Running unit tests
 
-If you are targeting older browsers, you may need to polyfill es7 arrays, specifically [.some()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/some)
+Run `ng test stepper` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-## Usage
+## Further help
 
-Install from npm:
-
- - `npm install ng-nav-wizard --save`
-
-Import and add the `NgNavWizardModule` to your main module, or wherever applicable. Example:
-
-```TypeScript
-import { NgNavWizardModule } from 'ng-nav-wizard';
-
-@NgModule({
-  declarations: [
-    ...
-  ],
-  imports: [
-    ...
-    ReactiveFormsModule,
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
-})
-export class AppModule { }
+To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
